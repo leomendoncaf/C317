@@ -61,13 +61,22 @@ class _MyHomePageState extends State<MyHomePage> {
                   const SizedBox(height: 20),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor:
-                          Theme.of(context).colorScheme.inversePrimary, // Define a cor de fundo do botão
+                      backgroundColor: Theme.of(context)
+                          .colorScheme
+                          .inversePrimary, // Define a cor de fundo do botão
                     ),
-                    onPressed: () {
-                      Navigator.of(context).pop(); // Fecha o diálogo
-                    },
-                    child: Text("Fechar", style: TextStyle(color: Theme.of(context).colorScheme.tertiary),),
+                    onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const MyHomePage(),
+                      ),
+                    ),
+                    child: const Text(
+                      "Fechar",
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
+                    ),
                   ),
                 ],
               ),
