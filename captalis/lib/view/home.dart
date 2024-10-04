@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:cool_stepper_reloaded/cool_stepper_reloaded.dart';
+
+import 'steppers/feedback_widget.dart';
+import 'steppers/steppers_page.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -8,6 +12,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  final formKey = GlobalKey<FormState>();
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -37,10 +43,36 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(
               width: size.width * .8,
               child: FloatingActionButton(
-                onPressed: () {},
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => StepperWidget(
+                      steps: [
+                        CoolStep(
+                          title: "Informaçoes do colaborador",
+                          content: FeedbackWidget(formKey: formKey),
+                          /*
+                          validation: () {
+                            if (!formKey.currentState!.validate()) {
+                              return 'Prencha corretamente';
+                            }
+                            return null;
+                          },*/
+                        ),
+                        CoolStep(
+                          title: "Informaçoes do colaborador",
+                          content: FeedbackWidget(formKey: formKey),
+                        ),
+                      ],
+                      onComplete: () {},
+                    ),
+                  ),
+                ),
                 isExtended: true,
-                child: const Text('Fazer Feedback',
-                style: TextStyle(fontSize: 15),),
+                child: const Text(
+                  'Fazer Feedback',
+                  style: TextStyle(fontSize: 15),
+                ),
               ),
             ),
           ],
