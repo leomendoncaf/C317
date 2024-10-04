@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 class FeedbackWidget extends StatefulWidget {
-  final GlobalKey<FormState> formKey;
+  //final GlobalKey<FormState> formKey;
 
   const FeedbackWidget({
     super.key,
-    required this.formKey,
+    //required this.formKey,
   });
 
   @override
@@ -54,7 +54,6 @@ class _FeedbackWidgetState extends State<FeedbackWidget> {
               ),
             ),
           ),
-          // Sei la,
           SizedBox(
             height: size.height,
             child: SingleChildScrollView(
@@ -70,14 +69,18 @@ class _FeedbackWidgetState extends State<FeedbackWidget> {
                   Container(
                     padding: const EdgeInsets.all(10),
                     child: Form(
-                      key: widget.formKey,
+                      //key: widget.formKey,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           SizedBox(
-                            height: size.height * .4,
+                            height: size.height * .2,
                           ),
-                          const SizedBox(height: 20),
+                          const SizedBox(height: 40),
+                          const Align(
+                            alignment: Alignment.centerLeft,
+                            child: Text('Digite seu nome:', style: TextStyle(fontSize: 15),),
+                          ),
                           TextFormField(
                             textInputAction: TextInputAction.next,
                             decoration: const InputDecoration(
@@ -101,7 +104,11 @@ class _FeedbackWidgetState extends State<FeedbackWidget> {
                               labelStyle: TextStyle(color: Colors.grey),
                             ),
                           ),
-                          const SizedBox(height: 20),
+                          const SizedBox(height: 40),
+                          const Align(
+                            alignment: Alignment.centerLeft,
+                            child: Text('Digite sua idade:', style: TextStyle(fontSize: 15),),
+                          ),
                           TextFormField(
                             textInputAction: TextInputAction.next,
                             decoration: const InputDecoration(
@@ -125,7 +132,11 @@ class _FeedbackWidgetState extends State<FeedbackWidget> {
                               labelStyle: TextStyle(color: Colors.grey),
                             ),
                           ),
-                          const SizedBox(height: 20),
+                          const SizedBox(height: 40),
+                          const Align(
+                            alignment: Alignment.centerLeft,
+                            child: Text('Selecione seu cargo:', style: TextStyle(fontSize: 15),),
+                          ),
                           SizedBox(
                             width: size.width * .8,
                             child: DropdownButtonFormField<String>(
@@ -168,7 +179,11 @@ class _FeedbackWidgetState extends State<FeedbackWidget> {
                               }).toList(),
                             ),
                           ),
-                          const SizedBox(height: 20),
+                          const SizedBox(height: 40),
+                          const Align(
+                            alignment: Alignment.centerLeft,
+                            child: Text('Está a quantos anos na empresa:', style: TextStyle(fontSize: 15),),
+                          ),
                           TextFormField(
                             textInputAction: TextInputAction.next,
                             keyboardType: TextInputType.number,

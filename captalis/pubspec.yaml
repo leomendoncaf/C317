@@ -37,6 +37,8 @@ dependencies:
   cupertino_icons: ^1.0.8
   cool_stepper_reloaded: ^3.2.6
   email_validator: ^3.0.0
+  lottie: ^3.1.2
+  confetti: ^0.8.0
 
 dev_dependencies:
   flutter_test:

@@ -32,19 +32,21 @@ class _StepperWidgetState extends State<StepperWidget> {
             nextButton: Container(
               height: size * .05,
               padding: const EdgeInsets.only(
-                right: 5,
+                right: 10,
               ),
               child: const Text('Proximo'),
             ),
             backButton: Container(
+              height: size * .05,
               padding: const EdgeInsets.only(
-                left: 5,
+                left: 10,
               ),
               child: const Text('Voltar'),
             ),
             finishButton: Container(
+              height: size * .05,
               padding: const EdgeInsets.only(
-                right: 5,
+                right: 10,
               ),
               child: const Text('Enviar'),
             ),
