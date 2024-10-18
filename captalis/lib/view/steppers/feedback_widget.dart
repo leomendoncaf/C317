@@ -74,13 +74,14 @@ class _FeedbackWidgetState extends State<FeedbackWidget> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           SizedBox(
-                            height: size.height * .2,
+                            height: size.height * .23,
                           ),
-                          const SizedBox(height: 40),
+                          const SizedBox(height: 80),
                           const Align(
                             alignment: Alignment.centerLeft,
                             child: Text('Digite seu nome:', style: TextStyle(fontSize: 15),),
                           ),
+                          const SizedBox(height: 20),
                           TextFormField(
                             textInputAction: TextInputAction.next,
                             decoration: const InputDecoration(
@@ -104,39 +105,12 @@ class _FeedbackWidgetState extends State<FeedbackWidget> {
                               labelStyle: TextStyle(color: Colors.grey),
                             ),
                           ),
-                          const SizedBox(height: 40),
-                          const Align(
-                            alignment: Alignment.centerLeft,
-                            child: Text('Digite sua idade:', style: TextStyle(fontSize: 15),),
-                          ),
-                          TextFormField(
-                            textInputAction: TextInputAction.next,
-                            decoration: const InputDecoration(
-                              fillColor: Colors.white,
-                              filled: true,
-                              enabled: true,
-                              contentPadding:
-                                  EdgeInsets.only(left: 15, right: 15),
-                              enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: Colors.grey),
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(25.0),
-                                ),
-                              ),
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(25.0),
-                                ),
-                              ),
-                              labelText: '',
-                              labelStyle: TextStyle(color: Colors.grey),
-                            ),
-                          ),
-                          const SizedBox(height: 40),
+                          const SizedBox(height: 80),
                           const Align(
                             alignment: Alignment.centerLeft,
                             child: Text('Selecione seu cargo:', style: TextStyle(fontSize: 15),),
                           ),
+                          const SizedBox(height: 20),
                           SizedBox(
                             width: size.width * .8,
                             child: DropdownButtonFormField<String>(
@@ -179,35 +153,7 @@ class _FeedbackWidgetState extends State<FeedbackWidget> {
                               }).toList(),
                             ),
                           ),
-                          const SizedBox(height: 40),
-                          const Align(
-                            alignment: Alignment.centerLeft,
-                            child: Text('Está a quantos anos na empresa:', style: TextStyle(fontSize: 15),),
-                          ),
-                          TextFormField(
-                            textInputAction: TextInputAction.next,
-                            keyboardType: TextInputType.number,
-                            decoration: const InputDecoration(
-                              fillColor: Colors.white,
-                              filled: true,
-                              enabled: true,
-                              contentPadding:
-                                  EdgeInsets.only(left: 15, right: 15),
-                              enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: Colors.grey),
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(25.0),
-                                ),
-                              ),
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(25.0),
-                                ),
-                              ),
-                              labelText: '',
-                              labelStyle: TextStyle(color: Colors.grey),
-                            ),
-                          ),
+                          const SizedBox(height: 80),
                         ],
                       ),
                     ),

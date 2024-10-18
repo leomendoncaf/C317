@@ -3,6 +3,7 @@ import 'package:lottie/lottie.dart';
 import 'package:confetti/confetti.dart';
 import 'steppers/feedback_widget.dart';
 import 'steppers/form_widget.dart';
+import 'steppers/form_widget2.dart';
 import 'steppers/steppers_page.dart';
 import 'package:cool_stepper_reloaded/cool_stepper_reloaded.dart';
 
@@ -130,11 +131,15 @@ class _MyHomePageState extends State<MyHomePage> {
                       steps: [
                         CoolStep(
                           title: "Informações do colaborador",
-                          content: FeedbackWidget(),
+                          content: const FeedbackWidget(),
                         ),
                         CoolStep(
                           title: "Informações do colaborador",
-                          content: FormWidget(),
+                          content: const FormWidget(),
+                        ),
+                        CoolStep(
+                          title: "Informações do colaborador",
+                          content: const FormWidget2(),
                         ),
                       ],
                       onComplete: showFeedbackDialog,

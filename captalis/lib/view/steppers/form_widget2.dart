@@ -1,25 +1,24 @@
 import 'package:flutter/material.dart';
 
-class FormWidget extends StatefulWidget {
+class FormWidget2 extends StatefulWidget {
   //final GlobalKey<FormState> formKey;
 
-  const FormWidget({
+  const FormWidget2({
     super.key,
     //required this.formKey,
   });
 
   @override
-  State<FormWidget> createState() => _FormWidgetState();
+  State<FormWidget2> createState() => _FormWidgetState();
 }
 
-class _FormWidgetState extends State<FormWidget> {
+class _FormWidgetState extends State<FormWidget2> {
   final emailController = TextEditingController();
   final nameController = TextEditingController();
   final passwordController = TextEditingController();
   int selected1 = -1;
   int selected2 = -1;
   int selected3 = -1;
-
 
   String? dropdownValueSex;
 
@@ -85,7 +84,7 @@ class _FormWidgetState extends State<FormWidget> {
                           const Align(
                             alignment: Alignment.centerLeft,
                             child: Text(
-                              'A comunicação interna na empresa é clara e eficiente?',
+                              'A empresa oferece oportunidades claras de desenvolvimento e crescimento profissional?',
                             ),
                           ),
                           Column(
@@ -110,7 +109,7 @@ class _FormWidgetState extends State<FormWidget> {
                                           ? Colors.yellow
                                           : Colors.grey, // Cor do botão
                                     ),
-                                    iconSize: 10, // Tamanho dos ícones
+                                    iconSize: 15, // Tamanho dos ícones
                                   );
                                 }),
                               ),
@@ -129,7 +128,7 @@ class _FormWidgetState extends State<FormWidget> {
                           const Align(
                             alignment: Alignment.centerLeft,
                             child: Text(
-                              'A empresa age de forma coerente com os valores que divulga?',
+                              'A empresa valoriza a diversidade e promove um ambiente inclusivo?',
                               style: TextStyle(fontSize: 15),
                             ),
                           ),
@@ -155,7 +154,7 @@ class _FormWidgetState extends State<FormWidget> {
                                           ? Colors.yellow
                                           : Colors.grey, // Cor do botão
                                     ),
-                                    iconSize: 10, // Tamanho dos ícones
+                                    iconSize: 15, // Tamanho dos ícones
                                   );
                                 }),
                               ),
@@ -163,7 +162,8 @@ class _FormWidgetState extends State<FormWidget> {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text('Muito ruim'), // Espaçamento entre o texto e os botões
+                                  Text(
+                                      'Muito ruim'), // Espaçamento entre o texto e os botões
                                   Text('Muito bom'),
                                 ],
                               ) // Espaçamento entre os botões e o texto à direita
@@ -173,7 +173,7 @@ class _FormWidgetState extends State<FormWidget> {
                           const Align(
                             alignment: Alignment.centerLeft,
                             child: Text(
-                              'A empresa promove um ambiente de trabalho saudável e equilibrado?',
+                              'A liderança da empresa se preocupa com o bem-estar dos colaboradores?',
                               style: TextStyle(fontSize: 15),
                             ),
                           ),
@@ -199,7 +199,7 @@ class _FormWidgetState extends State<FormWidget> {
                                           ? Colors.yellow
                                           : Colors.grey, // Cor do botão
                                     ),
-                                    iconSize: 10, // Tamanho dos ícones
+                                    iconSize: 15, // Tamanho dos ícones
                                   );
                                 }),
                               ),
