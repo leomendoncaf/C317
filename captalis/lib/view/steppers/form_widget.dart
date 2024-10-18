@@ -110,7 +110,7 @@ class _FormWidgetState extends State<FormWidget> {
                                           ? Colors.yellow
                                           : Colors.grey, // Cor do botão
                                     ),
-                                    iconSize: 10, // Tamanho dos ícones
+                                    iconSize: 15 // Tamanho dos ícones
                                   );
                                 }),
                               ),
@@ -155,7 +155,7 @@ class _FormWidgetState extends State<FormWidget> {
                                           ? Colors.yellow
                                           : Colors.grey, // Cor do botão
                                     ),
-                                    iconSize: 10, // Tamanho dos ícones
+                                    iconSize: 15 // Tamanho dos ícones
                                   );
                                 }),
                               ),
@@ -199,7 +199,7 @@ class _FormWidgetState extends State<FormWidget> {
                                           ? Colors.yellow
                                           : Colors.grey, // Cor do botão
                                     ),
-                                    iconSize: 10, // Tamanho dos ícones
+                                    iconSize: 15 // Tamanho dos ícones
                                   );
                                 }),
                               ),
